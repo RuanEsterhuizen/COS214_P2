@@ -36,3 +36,8 @@ void Infantry::rest()
 
 
 }
+
+Soldiers* Infantry::clonis() {
+    //makes a deep copy of the soldier that called this
+    // do we use the SoldierFactory or should we make a constructor?
+}

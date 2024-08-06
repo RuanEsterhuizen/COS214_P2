@@ -28,3 +28,8 @@ void ShieldBearer::rest()
 
     //some more implimentation needed here
 }
+
+Soldiers* ShieldBearer::clonis() {
+    //makes a deep copy of the soldier that called this
+    // do we use the SoldierFactory or should we make a constructor?
+}

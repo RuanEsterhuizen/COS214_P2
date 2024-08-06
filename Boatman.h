@@ -14,6 +14,8 @@ class Boatman : public Soldiers {
         //primitive operations used by disengage()
         void retreat();
         void rest();
+    public:
+        Soldiers* clonis(); //the part from the prototype
 };
 
 #endif

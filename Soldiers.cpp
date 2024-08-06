@@ -1,6 +1,6 @@
 #include "Soldiers.h"
 
-void Soldiers::engage()  //template method that uses prepare() and execute()
+void Soldiers::engage() // template method that uses prepare() and execute()
 {
     cout << unitName + ", engage!" << endl;
     this->prepare();

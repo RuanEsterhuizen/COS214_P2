@@ -12,8 +12,6 @@ class Soldiers {
         int defencePerSoldier;
         int amountOfSoldiersPerUnit;
         string unitName;
-
-        
         
         // template method primitive operations
         virtual void prepare() = 0;
@@ -23,8 +21,14 @@ class Soldiers {
 
     public:
 
+        //the part from prototype
+        virtual Soldiers* clonis() = 0;
+
         void engage();  //template method that uses prepare() and execute()
         void disengage();  //template method that uses retreat() and rest()
+
+        // we probably need a constructor and destructor or something
+        // or does the factory take care of that?
 
 };
 
