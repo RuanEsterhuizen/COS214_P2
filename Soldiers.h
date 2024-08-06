@@ -2,7 +2,9 @@
 #define SOLDIERS_H
 
 #include <iostream>
+#include "Memento.h"
 using namespace std;
+
 
 // should we do templates for this?
 class Soldiers {
@@ -26,6 +28,10 @@ class Soldiers {
 
         void engage();  //template method that uses prepare() and execute()
         void disengage();  //template method that uses retreat() and rest()
+
+        //the memento stuff
+        Memento* militusMemento();
+        void vivificaMemento(Memento* memento); 
 
         // we probably need a constructor and destructor or something
         // or does the factory take care of that?

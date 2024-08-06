@@ -15,3 +15,14 @@ void Soldiers::disengage()  //template method that uses retreat() and rest()
     this->rest();
     cout << "disengage complete" << endl;
 }
+
+Memento *Soldiers::militusMemento()
+{
+    //creates a memento with the current state
+    return NULL;
+}
+
+void Soldiers::vivificaMemento(Memento *memento)
+{
+    //restores to the state of this memento
+}
