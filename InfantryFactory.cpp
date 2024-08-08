@@ -2,5 +2,7 @@
 
 Soldiers *InfantryFactory::createUnit()
 {
-    return NULL;
+    //should the factory hardcode or take input?
+
+    return new Infantry();
 }

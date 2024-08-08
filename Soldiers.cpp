@@ -1,5 +1,14 @@
 #include "Soldiers.h"
 
+Soldiers::Soldiers(int health, int damage, int defence, int amount, string unitName)
+{
+    this->healthPerSoldier = health;
+    this->damagePerSoldier = damage;
+    this->defencePerSoldier = defence;
+    this->amountOfSoldiersPerUnit = amount;
+    this->unitName = unitName;
+}
+
 void Soldiers::engage() // template method that uses prepare() and execute()
 {
     cout << unitName + ", engage!" << endl;

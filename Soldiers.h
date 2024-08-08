@@ -22,6 +22,9 @@ class Soldiers {
         virtual void rest() = 0;
 
     public:
+        //stuff not in spec
+        Soldiers(int health, int damage, int defence, int amount, string unitName);
+        //destructor somewhere?
 
         //the part from prototype
         virtual Soldiers* clonis() = 0;
@@ -32,9 +35,6 @@ class Soldiers {
         //the memento stuff
         Memento* militusMemento();
         void vivificaMemento(Memento* memento); 
-
-        // we probably need a constructor and destructor or something
-        // or does the factory take care of that?
 
 };
 
