@@ -31,6 +31,11 @@ class Soldiers {
         //stuff not in spec
         Soldiers(int health, int damage, int defence, int amount, string unitName);
         Soldiers();
+
+        int calculateTotalHealthPerUnit();
+        int calculateTotalDamagePerUnit();
+        int calculateTotalDefencePerUnit();
+
         //destructor somewhere?
 
         //the part from prototype

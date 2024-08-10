@@ -10,9 +10,9 @@ using namespace std;
 class ShieldBearerfactory : public SoldierFactory {
     public:
         Soldiers* createUnit();
-        int calculateTotalHealthPerUnit();
-        int calculateTotalDamagePerUnit();
-        int calculateTotalDefencePerUnit();
+        int calculateTotalHealthPerUnit(ShieldBearer* unit);
+        int calculateTotalDamagePerUnit(ShieldBearer* unit);
+        int calculateTotalDefencePerUnit(ShieldBearer* unit);
 };
 
 #endif

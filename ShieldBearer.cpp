@@ -38,3 +38,5 @@ ShieldBearer::ShieldBearer():Soldiers(100,50,100,75,"ShieldBearers")
 {
     
 }
+
+
