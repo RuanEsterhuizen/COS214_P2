@@ -33,7 +33,7 @@ int getAmount(){
     return amountOfSoldiersPerUnit;
 }
 
-int getUnitName(){
+string getUnitName(){
     return unitName;
 }
 
