@@ -7,6 +7,7 @@ using namespace std;
 #include "Soldiers.h"
 
 class Infantry : public Soldiers {
+
     private: 
         //primitive operations used by engage()
         void prepare();
@@ -15,6 +16,7 @@ class Infantry : public Soldiers {
         void retreat();
         void rest();
     public:
+        Infantry();  //not in spec
         Soldiers* clonis();  //the part from the prototype
 };
 

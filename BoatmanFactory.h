@@ -5,6 +5,7 @@
 using namespace std;
 
 #include "SoldierFactory.h"
+#include "Boatman.h"
 
 class BoatmanFactory : public SoldierFactory {
     public:

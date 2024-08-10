@@ -16,6 +16,9 @@ class Boatman : public Soldiers {
         void rest();
     public:
         Soldiers* clonis(); //the part from the prototype
+
+        //stuff not in the spec
+        Boatman();
 };
 
 #endif

@@ -8,6 +8,7 @@ using namespace std;
 #include "Infantry.h"
 
 class InfantryFactory : public SoldierFactory {
+
     public:
         Soldiers* createUnit();
         int calculateTotalHealthPerUnit();

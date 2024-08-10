@@ -37,7 +37,13 @@ void Infantry::rest()
 
 }
 
-Soldiers* Infantry::clonis() {
+Infantry::Infantry():Soldiers(50,100,50,100,"Infantry")
+{
+    
+}
+
+Soldiers *Infantry::clonis()
+{
     //makes a deep copy of the soldier that called this
     // do we use the SoldierFactory or should we make a constructor?
 }

@@ -16,6 +16,9 @@ class ShieldBearer : public Soldiers {
         void rest();
     public: 
         Soldiers* clonis();  //the part from the prototype
+
+        //stuff not in spec
+        ShieldBearer();
 };
 
 #endif

@@ -2,5 +2,5 @@
 
 Soldiers *BoatmanFactory::createUnit()
 {
-    return NULL;
+    return new Boatman();
 }

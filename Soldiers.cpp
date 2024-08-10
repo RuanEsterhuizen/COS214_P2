@@ -9,6 +9,15 @@ Soldiers::Soldiers(int health, int damage, int defence, int amount, string unitN
     this->unitName = unitName;
 }
 
+Soldiers::Soldiers()
+{
+    this->healthPerSoldier = 100;
+    this->damagePerSoldier = 80;
+    this->defencePerSoldier = 50;
+    this->amountOfSoldiersPerUnit = 10;
+    this->unitName = "Unknown unit - No team";
+}
+
 void Soldiers::engage() // template method that uses prepare() and execute()
 {
     cout << unitName + ", engage!" << endl;
@@ -28,7 +37,7 @@ void Soldiers::disengage()  //template method that uses retreat() and rest()
 Memento *Soldiers::militusMemento()
 {
     //creates a memento with the current state
-    return NULL;
+    return nullptr;
 }
 
 void Soldiers::vivificaMemento(Memento *memento)

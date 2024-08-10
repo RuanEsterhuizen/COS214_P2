@@ -8,6 +8,12 @@ using namespace std;
 
 // should we do templates for this?
 class Soldiers {
+
+    //all the children should be friends
+    friend class Infantry;
+    friend class Boatman;
+    friend class ShieldBearer;
+
     private:
         int healthPerSoldier;
         int damagePerSoldier;
@@ -24,6 +30,7 @@ class Soldiers {
     public:
         //stuff not in spec
         Soldiers(int health, int damage, int defence, int amount, string unitName);
+        Soldiers();
         //destructor somewhere?
 
         //the part from prototype

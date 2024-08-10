@@ -2,5 +2,5 @@
 
 Soldiers *ShieldBearerfactory::createUnit()
 {
-    return NULL;
+    return new ShieldBearer();
 }
