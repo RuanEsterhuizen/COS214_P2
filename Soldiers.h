@@ -31,7 +31,12 @@ class Soldiers {
         //stuff not in spec
         Soldiers(int health, int damage, int defence, int amount, string unitName);
         Soldiers();
-
+        int getHealth();
+        int getDamage();
+        int getDefence();
+        int getAmount();
+        int getUnitName();
+        
         int calculateTotalHealthPerUnit();
         int calculateTotalDamagePerUnit();
         int calculateTotalDefencePerUnit();
@@ -47,6 +52,8 @@ class Soldiers {
         //the memento stuff
         Memento* militusMemento();
         void vivificaMemento(Memento* memento); 
+
+        
 
 };
 

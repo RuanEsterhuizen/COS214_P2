@@ -1,5 +1,15 @@
 #include "Infantry.h"
 
+Infantry::Infantry():Soldiers(50,100,50,100,"Infantry")
+{
+    
+}
+
+Infantry::Infantry(int health, int damage, int defence, int amount, string unitName):Soldiers(health, damage, defence, amount, unitName)
+{
+    
+}
+
 void Infantry::prepare()
 {
     cout << "Infantry preparing..." << endl;
@@ -37,13 +47,14 @@ void Infantry::rest()
 
 }
 
-Infantry::Infantry():Soldiers(50,100,50,100,"Infantry")
-{
-    
-}
+
 
 Soldiers *Infantry::clonis()
 {
     //makes a deep copy of the soldier that called this
     // do we use the SoldierFactory or should we make a constructor?
+
+    Soldiers * copy = new Infantry(this->getHealth(), this->getDamage(), this->getDefence(), this->getAmount(), this->getUnitName());
+
+    return copy;
 }

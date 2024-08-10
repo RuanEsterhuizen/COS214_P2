@@ -1,4 +1,12 @@
 #include "Soldiers.h"
+Soldiers::Soldiers()
+{
+    this->healthPerSoldier = 100;
+    this->damagePerSoldier = 80;
+    this->defencePerSoldier = 50;
+    this->amountOfSoldiersPerUnit = 10;
+    this->unitName = "Unknown unit - No team";
+}
 
 Soldiers::Soldiers(int health, int damage, int defence, int amount, string unitName)
 {
@@ -9,14 +17,27 @@ Soldiers::Soldiers(int health, int damage, int defence, int amount, string unitN
     this->unitName = unitName;
 }
 
-Soldiers::Soldiers()
-{
-    this->healthPerSoldier = 100;
-    this->damagePerSoldier = 80;
-    this->defencePerSoldier = 50;
-    this->amountOfSoldiersPerUnit = 10;
-    this->unitName = "Unknown unit - No team";
+int getHealth(){
+    return healthPerSoldier;
 }
+
+int getDamage(){
+    return damagePerSoldier;
+}
+
+int getDefence(){
+    return defencePerSoldier;
+}
+
+int getAmount(){
+    return amountOfSoldiersPerUnit;
+}
+
+int getUnitName(){
+    return unitName;
+}
+
+
 
 int Soldiers::calculateTotalHealthPerUnit()
 {

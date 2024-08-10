@@ -19,6 +19,7 @@ class Boatman : public Soldiers {
 
         //stuff not in the spec
         Boatman();
+        Boatman(int health, int damage, int defence, int amount, string unitName);
 };
 
 #endif

@@ -19,6 +19,7 @@ class ShieldBearer : public Soldiers {
 
         //stuff not in spec
         ShieldBearer();
+        ShieldBearer(int health, int damage, int defence, int amount, string unitName);
 };
 
 #endif

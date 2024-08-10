@@ -17,6 +17,7 @@ class Infantry : public Soldiers {
         void rest();
     public:
         Infantry();  //not in spec
+        Infantry(int health, int damage, int defence, int amount, string unitName);
         Soldiers* clonis();  //the part from the prototype
 };
 
