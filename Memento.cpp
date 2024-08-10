@@ -9,3 +9,23 @@ Memento::Memento(int health, int damage, int defence, int soldierCount, string u
 
     //this also needs to be saved on a stack -> caretaker
 }
+
+int Memento::getHealth(){
+    return healthPerSoldier;
+}
+
+int Memento::getDamage(){
+    return damagePerSoldier;
+}
+
+int Memento::getDefence(){
+    return defencePerSoldier;
+}
+
+int Memento::getAmount(){
+    return amountOfSoldiersPerUnit;
+}
+
+string Memento::getUnitName(){
+    return unitName;
+}

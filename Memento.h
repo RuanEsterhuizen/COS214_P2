@@ -14,6 +14,13 @@ class Memento {
     
         Memento(int health, int damage, int defence, int soldierCount, string unitName);
     
+    public:
+        int getHealth();
+        int getDamage();
+        int getDefence();
+        int getAmount();
+        string getUnitName();
+    
 };
 
 #endif

@@ -17,23 +17,23 @@ Soldiers::Soldiers(int health, int damage, int defence, int amount, string unitN
     this->unitName = unitName;
 }
 
-int getHealth(){
+int Soldiers::getHealth(){
     return healthPerSoldier;
 }
 
-int getDamage(){
+int Soldiers::getDamage(){
     return damagePerSoldier;
 }
 
-int getDefence(){
+int Soldiers::getDefence(){
     return defencePerSoldier;
 }
 
-int getAmount(){
+int Soldiers::getAmount(){
     return amountOfSoldiersPerUnit;
 }
 
-int getUnitName(){
+int Soldiers::getUnitName(){
     return unitName;
 }
 
@@ -73,10 +73,16 @@ void Soldiers::disengage()  //template method that uses retreat() and rest()
 Memento *Soldiers::militusMemento()
 {
     //creates a memento with the current state
-    return nullptr;
+    Memento * memento = new Memento(int health, int damage, int defence, int soldierCount, string unitName);
+    return memento;
 }
 
 void Soldiers::vivificaMemento(Memento *memento)
 {
+    this->healthPerSoldier = memento->getHealth();
+    this->damagePerSoldier = memento->getDamage();
+    this->defencePerSoldier = memento->getDefence();
+    this->amountOfSoldiersPerUnit = memento->getAmount();
+    this->unitName = memento->getUnitName();
     //restores to the state of this memento
 }

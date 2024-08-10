@@ -35,7 +35,7 @@ class Soldiers {
         int getDamage();
         int getDefence();
         int getAmount();
-        int getUnitName();
+        string getUnitName();
         
         int calculateTotalHealthPerUnit();
         int calculateTotalDamagePerUnit();
