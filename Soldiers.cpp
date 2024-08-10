@@ -33,7 +33,7 @@ int Soldiers::getAmount(){
     return amountOfSoldiersPerUnit;
 }
 
-int Soldiers::getUnitName(){
+string Soldiers::getUnitName(){
     return unitName;
 }
 
