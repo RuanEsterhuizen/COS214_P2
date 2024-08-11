@@ -36,10 +36,6 @@ class Soldiers {
         int getDefence();
         int getAmount();
         string getUnitName();
-        
-        int calculateTotalHealthPerUnit();
-        int calculateTotalDamagePerUnit();
-        int calculateTotalDefencePerUnit();
 
         //destructor somewhere?
 

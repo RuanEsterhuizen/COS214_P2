@@ -7,17 +7,17 @@ Soldiers *ShieldBearerfactory::createUnit()
     return shieldBearer;
 }
 
-int ShieldBearerfactory::calculateTotalHealthPerUnit(ShieldBearer *unit)
+int ShieldBearerFactory::calculateTotalHealthPerUnit(ShieldBearer *unit)
 {
-    return unit->calculateTotalHealthPerUnit();
+    return unit->getAmount() * unit->getHealth();
 }
 
-int ShieldBearerfactory::calculateTotalDamagePerUnit(ShieldBearer *unit)
+int ShieldBearerFactory::calculateTotalDamagePerUnit(ShieldBearer *unit)
 {
-    return unit->calculateTotalDamagePerUnit();
+    return unit->getAmount() * unit->getDamage();
 }
 
-int ShieldBearerfactory::calculateTotalDefencePerUnit(ShieldBearer *unit)
+int ShieldBearerFactory::calculateTotalDefencePerUnit(ShieldBearer *unit)
 {
-    return unit->calculateTotalHealthPerUnit();
+    return unit->getAmount() * unit->getDefence();
 }

@@ -37,23 +37,6 @@ string Soldiers::getUnitName(){
     return unitName;
 }
 
-
-
-int Soldiers::calculateTotalHealthPerUnit()
-{
-    return healthPerSoldier * amountOfSoldiersPerUnit;
-}
-
-int Soldiers::calculateTotalDamagePerUnit()
-{
-    return damagePerSoldier * amountOfSoldiersPerUnit;
-}
-
-int Soldiers::calculateTotalDefencePerUnit()
-{
-    return defencePerSoldier * amountOfSoldiersPerUnit;
-}
-
 void Soldiers::engage() // template method that uses prepare() and execute()
 {
     cout << unitName + ", engage!" << endl;
