@@ -13,7 +13,7 @@ class SoldierFactory {
         vector<Soldiers*> soldiers;
     protected:
         virtual Soldiers* createUnit() = 0;
-
+        virtual ~SoldierFactory();
         //should these be virtual or pure virtual?
         virtual int calculateTotalHealthPerUnit() = 0;
         virtual int calculateTotalDamagePerUnit() = 0;
