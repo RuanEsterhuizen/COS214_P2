@@ -7,17 +7,17 @@ Soldiers *InfantryFactory::createUnit()
     return infantry;
 }
 
-int InfantryFactory::calculateTotalHealthPerUnit(Infantry *unit)
+int InfantryFactory::calculateTotalHealthPerUnit(Soldiers *unit) 
 {
     return unit->getAmount() * unit->getHealth();
 }
 
-int InfantryFactory::calculateTotalDamagePerUnit(Infantry *unit)
+int InfantryFactory::calculateTotalDamagePerUnit(Soldiers *unit) 
 {
     return unit->getAmount() * unit->getDamage();
 }
 
-int InfantryFactory::calculateTotalDefencePerUnit(Infantry *unit)
+int InfantryFactory::calculateTotalDefencePerUnit(Soldiers *unit) 
 {
     return unit->getAmount() * unit->getDefence();
 }

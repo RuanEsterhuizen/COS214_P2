@@ -5,14 +5,14 @@
 using namespace std;
 
 #include "SoldierFactory.h"
-#include "ShieldBearer.h";
+#include "ShieldBearer.h"
 
-class ShieldBearerfactory : public SoldierFactory {
+class ShieldBearerFactory : public SoldierFactory {
     public:
         Soldiers* createUnit();
-        int calculateTotalHealthPerUnit(ShieldBearer* unit);
-        int calculateTotalDamagePerUnit(ShieldBearer* unit);
-        int calculateTotalDefencePerUnit(ShieldBearer* unit);
+        int calculateTotalHealthPerUnit(Soldiers * unit);
+        int calculateTotalDamagePerUnit(Soldiers * unit);
+        int calculateTotalDefencePerUnit(Soldiers * unit);
 };
 
 #endif

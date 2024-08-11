@@ -11,9 +11,9 @@ class InfantryFactory : public SoldierFactory {
 
     public:
         Soldiers* createUnit();
-        int calculateTotalHealthPerUnit(Infantry* unit);
-        int calculateTotalDamagePerUnit(Infantry* unit);
-        int calculateTotalDefencePerUnit(Infantry* unit);
+        int calculateTotalHealthPerUnit(Soldiers * unit);
+        int calculateTotalDamagePerUnit(Soldiers * unit);
+        int calculateTotalDefencePerUnit(Soldiers * unit);
 };
 
 #endif

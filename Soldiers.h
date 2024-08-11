@@ -21,8 +21,7 @@ class Soldiers {
         int amountOfSoldiersPerUnit;
         string unitName;
 
-        bool disengaged;
-        Memento mem;
+        
         
         // template method primitive operations
         virtual void prepare() = 0;
@@ -31,15 +30,16 @@ class Soldiers {
         virtual void rest() = 0;
 
     public:
-        //stuff not in spec
-        Soldiers(int health, int damage, int defence, int amount, string unitName);
+        bool prepared;
         Soldiers();
+        Soldiers(int health, int damage, int defence, int amount, string unitName);
         int getHealth();
         int getDamage();
         int getDefence();
         int getAmount();
         string getUnitName();
-        bool isDisengaged();
+        void setUnitName(string newName);
+        bool isPrepared();
 
         void killSoldiers(int amount);
 

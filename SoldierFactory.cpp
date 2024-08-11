@@ -3,7 +3,10 @@
 
 SoldierFactory::~SoldierFactory(){
     for(Soldiers * soldier : soldiers){
-        delete soldier;
+        if(soldier != nullptr){
+            delete soldier;
+        }
+        
     }
     soldiers.clear();
 }
