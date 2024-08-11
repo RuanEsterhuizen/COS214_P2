@@ -5,16 +5,17 @@
 using namespace std;
 
 class Memento {
+
+    friend class Soldiers;
+
     private:
         int healthPerSoldier;
         int damagePerSoldier;
         int defencePerSoldier;
         int amountOfSoldiersPerUnit;
         string unitName;
-    
-        Memento(int health, int damage, int defence, int soldierCount, string unitName);
-    
     public:
+        Memento(int health, int damage, int defence, int soldierCount, string unitName);
         int getHealth();
         int getDamage();
         int getDefence();

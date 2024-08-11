@@ -20,6 +20,9 @@ class Soldiers {
         int defencePerSoldier;
         int amountOfSoldiersPerUnit;
         string unitName;
+
+        bool disengaged;
+        Memento mem;
         
         // template method primitive operations
         virtual void prepare() = 0;
@@ -36,13 +39,16 @@ class Soldiers {
         int getDefence();
         int getAmount();
         string getUnitName();
+        bool isDisengaged();
+
+        void killSoldiers(int amount);
 
         //destructor somewhere?
 
         //the part from prototype
         virtual Soldiers* clonis() = 0;
 
-        void engage();  //template method that uses prepare() and execute()
+        void engage(Soldiers* other);  //template method that uses prepare() and execute()
         void disengage();  //template method that uses retreat() and rest()
 
         //the memento stuff

@@ -6,7 +6,6 @@ Memento::Memento(int health, int damage, int defence, int soldierCount, string u
     this->defencePerSoldier = defence;
     this->amountOfSoldiersPerUnit = soldierCount;
     this->unitName = unitName;
-    //this also needs to be saved on a stack -> caretaker
 }
 
 int Memento::getHealth(){
